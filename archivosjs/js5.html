@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Angel Gonzalez">
+    <meta name="keywords" content="javascript5">
+    <title>JavaScript N.5</title>
+</head>
+<body style="background-color: yellow;">
+    <script src="js5.js"></script>
+    <main>
+        <h1 style="text-align: center;">Practica javascript 5</h1>
+        <article class="contenidogral" style="text-align: center;">
+            <div id="calculadora">
+                <label for="primernumero">Primer numero: </label>
+                <input type="text" name="primernumero" id="primernumero">
+                <br>
+                <br>
+                <label for="segundonumero">Numero 2: </label>
+                <input type="text" name="segundonumero" id="segundonumero">
+                <br>
+                <br>
+                <label for="operacion">Operacion: </label>
+                <select name="operacion" id="operacion" form="operacion">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="x">x</option>
+                    <option value="/">/</option>
+                </select>
+                <br>
+                <br>
+                <label for="resultado">Resultado: </label>
+                <input type="text" name="resultado" id="resultado" readonly>
+                <br>
+                <br>
+                <button onclick="ejecutarcalculadora()">Resultado</button>
+                <br>
+                <br>
+                <br>
+                <br>    
+            </div>
+            <div id="tablas">
+                <div id="Datos">
+                    <label for="nro">Numero (tabla): </label>
+                    <input type="text" name="nro" id="nro">
+                    <br><br>
+                    <label for="tipodetabla">Tipo de tabla: </label>
+                    <select name="tipodetabla" form="tipodetabla" id="tipodetabla">
+                        <option value="1">Normal</option>
+                        <option value="2">Invertida</option>
+                    </select>
+                    <br><br>
+                    <label for="longitud">Longitud: </label>
+                    <input type="text" name="longitud" id="longitud">
+                    <br><br>
+                    <button onclick="tablafinal()">Generar tabla</button>
+                </div>       
+                <div class="tabla_resultados">
+                    <h3>Tabla de resultados: </h3>
+                    <div id="tabla"></div>
+                </div>
+                <script src="js5.js"></script>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
